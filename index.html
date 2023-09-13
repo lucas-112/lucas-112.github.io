@@ -3,29 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Willkommen</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Willkommen zurück</title>
     <style>
         body {
+            font-family: Arial, sans-serif; /* Moderne Schriftart */
+            text-align: center; /* Text mittig ausrichten */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f0f0f0; /* Hintergrundfarbe der Seite */
         }
-        h1 {
-            font-size: 36px;
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        #main-heading {
+            font-size: 36px; /* Große Schriftgröße */
+            margin: 0 0 10px; /* Abstand nach unten */
         }
+
+        #sub-heading {
+            font-size: 18px; /* Kleinere Schriftgröße */
+            margin: 0 0 15px; /*  Abstand nach unten */
+        }
+
+        .iframe-container {
+            width: 400px; /* Breite des gewünschten Ausschnitts */
+            height: 80px; /* Höhe des gewünschten Ausschnitts */
+            overflow: hidden; /* Verstecke den überflüssigen Inhalt */
+        }
+
+        iframe {
+            width: 500px; /* Breite des gesamten iFrames */
+            height: 120px; /* Höhe des gesamten iFrames */
+            margin: 0 0 0 0; /* Verschiebe den iFrame, um den gewünschten Ausschnitt anzuzeigen */
+        }
+
     </style>
 </head>
 <body>
-    <h1>Testnachricht</h1>
+    <h1 id="main-heading">Willkommen zurück aus der Sommerpause!</h1>
+    <p id="sub-heading">Nächste Dienste:</p>
+        <div class="iframe-container">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Europe%2FBerlin&showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showTz=0&showCalendars=0&mode=AGENDA&src=ZGI1NmY0MjJiNWQ3YzllYzAwNGU2NmE5YzdjYzVkNTM3YmM4Y2RlYWU5Mzk3YzBkZGI4NmJjNWIzMDJlMjFmNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NDU3YTQ5YzI0ODk3NTRhYjE2MmFjZGM0Mjc4Njk3YzZmOWNiYmViNTMzZjVmOGUzZTc2N2YwYTMwZmFmZjJhMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MDNlMzUxMDMxOGE4MzQ5YjM3ZTAxNTk0ZGUzNzFkZDhmY2IwYzRhMjc2NzU2Y2FhMzY0YzIyOTA3NzRlYzE0YkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NGY5NGJjMTkzZmU5ODhiOWM3MWVlMzRkOGU1MzAwZTU4MmIxMmYzM2M0M2U0ZDNkNjY0ZDc3OWEyYjYyMGQ3OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZDA2M2FmNzE1ZDQzMDNiY2I3NGE1NjBlMjQ4OTg2ZDRiY2M3ODVmZjczODlmMDk3ZjU1NjJiOGU1YmFhZDRiNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MzNjZTE3ZmI1MTc0ZmM1ZDM3YTJkNjM3NjhhMTRhODczN2M3NTRhMWUwOTQ0MDhmOTU4YTg0NGE4YzJmYjFiNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D50000&color=%23F09300&color=%237CB342&color=%23039BE5&color=%233F51B5&color=%23F6BF26" "></iframe>
+    </div>
 </body>
 </html>

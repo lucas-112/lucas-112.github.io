@@ -17,9 +17,20 @@
             max-width: 100%; /* Maximale Breite auf die Bildschirmbreite begrenzen */
             max-height: 100%; /* Maximale Höhe auf die Bildschirmhöhe begrenzen */
         }
+        .pin {
+            position: absolute; /* Positioniert das Element relativ zum Bild */
+            top: 49%; /* Vertikale Position in der Mitte des Bildes */
+            left: 53.2%; /* Horizontale Position in der Mitte des Bildes */
+            transform: translate(-50%, -50%); /* Zentriert das Element genau in der Mitte */
+            width: 10px; /* Breite der Stecknadel in Pixeln */
+            height: 10px; /* Höhe der Stecknadel in Pixeln */
+            background-color: red; /* Rote Farbe für die Stecknadel */
+            border-radius: 50%; /* Runde Form für die Stecknadel */
+        }
     </style>
 </head>
 <body>
     <img src="https://www.dwd.de/DWD/warnungen/warnstatus/SchilderSU.jpg" alt="Wetterwarnung BW DWD" />
+    <div class="pin"></div> <!-- Das Element für die Stecknadel -->
 </body>
 </html>

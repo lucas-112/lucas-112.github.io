@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wetterwarnung DWD BW</title>
+    <style>
+        /* Stil, um das Bild in der Mitte der Seite anzuzeigen */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        img {
+            width: 670px; /* Gewünschte Breite in Pixeln */
+            height: 510px; /* Gewünschte Höhe in Pixeln */
+            max-width: 100%; /* Maximale Breite auf die Bildschirmbreite begrenzen */
+            max-height: 100%; /* Maximale Höhe auf die Bildschirmhöhe begrenzen */
+        }
+    </style>
 </head>
 <body>
-    <img src="https://www.dwd.de/DWD/warnungen/warnstatus/SchilderSU.jpg" alt="Wetterwarnung BW DWD" width="650" height="500">
+    <img src="https://www.dwd.de/DWD/warnungen/warnstatus/SchilderSU.jpg" alt="Wetterwarnung BW DWD" />
 </body>
 </html>

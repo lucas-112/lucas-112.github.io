@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Regenradarfilm DWD BW</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        img {
+            width: 670px; /* Gewünschte Breite in Pixeln */
+            height: 510px; /* Gewünschte Höhe in Pixeln */
+            max-width: 100%; /* Maximale Breite auf die Bildschirmbreite begrenzen */
+            max-height: 100%; /* Maximale Höhe auf die Bildschirmhöhe begrenzen */
+        }
+        .pin {
+            position: absolute; /* Positioniert das Element relativ zum Bild */
+            top: 47%; /* Vertikale Position in der Mitte des Bildes */
+            left: 48.8%; /* Horizontale Position in der Mitte des Bildes */
+            transform: translate(-50%, -50%); /* Zentriert das Element genau in der Mitte */
+            width: 7px; /* Breite der Stecknadel in Pixeln */
+            height: 7px; /* Höhe der Stecknadel in Pixeln */
+            background-color: #09ff00; /* Rote Farbe für die Stecknadel */
+            border-style: solid;
+            border-color: black;
+            border-radius: 50%; /* Runde Form für die Stecknadel */
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.dwd.de/DWD/wetter/radar/radfilm_baw_akt.gif" alt="Regenradarfilm BW DWD" />
+    <div class="pin"></div> <!-- Das Element für die Stecknadel -->
+</body>
+</html>
